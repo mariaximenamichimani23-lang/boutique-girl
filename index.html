@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Boutique Girl</title>
+
+  <link href="https://es.wikipedia.org/wiki/Ropa" rel="stylesheet">
+
+  <style>
+    :root{
+      --pink:#ef90c6;
+      --pink2:#ffecf6;
+      --lilac:#e5d8ff;
+      --white:#ffffff;
+      --text:#533b4d;
+      --card:#ffffff;
+      --accent:#5e3746;
+      --radius:16px;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:'Poppins', sans-serif;
+      background:linear-gradient(180deg,var(--pink),var(--pink2),var(--lilac));
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header{
+      background:rgba(255,255,255,0.5);
+      backdrop-filter:blur(12px);
+      position:sticky;
+      top:0;
+      border-bottom:1px solid rgba(255,255,255,0.4);
+      z-index:30;
+    }
+
+    .nav{
+      max-width:1100px;
+      margin:auto;
+      padding:14px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .brand{
+      font-size:26px;
+      font-weight:700;
+      color:#f05d98;
+      text-decoration:none;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .brand span{
+      background:var(--accent);
+      padding:10px 12px;
+      border-radius:50%;
+      color:white;
+      font-weight:700;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#7f5b6b;
+      padding:8px 12px;
+      font-weight:500;
+      border-radius:10px;
+    }
+    nav a:hover{
+      background:#ffe7f2;
+    }
+
+    /* HERO */
+    .hero{
+      max-width:1100px;
+      margin:40px auto;
+      padding:0 20px;
+      display:flex;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+    .hero-text{
+      flex:1;
+    }
+    .hero h1{
+      font-size:40px;
+      font-weight:700;
+      margin:0 0 8px;
+    }
+    .hero p{
+      font-size:16px;
+      color:#6a5261;
+      margin:0 0 20px;
+    }
+    .btn{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:12px 20px;
+      border-radius:14px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.2s;
+      box-shadow:0 6px 14px rgba(0,0,0,0.15);
+    }
+    .btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 18px rgba(0,0,0,0.22);
+    }
+    .hero img{
+      width:460px;
+      max-width:100%;
+      border-radius:20px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    /* PRODUCTOS */
+    .section{
+      max-width:1100px;
+      margin:20px auto;
+      padding:0 20px;
+    }
+
+    .section h2{
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .grid{
+      display:grid;
+      gap:20px;
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:20px;
+      padding:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+      display:flex;
+      flex-direction:column;
+      transition:0.2s;
+    }
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+      border-radius:16px;
+    }
+
+    .title{
+      font-weight:600;
+      margin:10px 0 4px;
+      color:#513649;
+    }
+
+    .price{
+      color:var(--accent);
+      font-weight:700;
+      margin-bottom:10px;
+    }
+
+    .addbtn{
+      margin-top:auto;
+      padding:10px;
+      border-radius:12px;
+      background:#ffd6eb;
+      color:#513649;
+      border:0;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.2s;
+    }
+    .addbtn:hover{
+      background:#ffc4e0;
+    }
+
+    /* FOOTER */
+    footer{
+      margin-top:50px;
+      padding:20px;
+      text-align:center;
+      color:#664c5e;
+      background:rgba(255,255,255,0.4);
+      backdrop-filter:blur(10px);
+      border-top:1px solid rgba(255,255,255,0.4);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <img src="logo2.png" whidth="150" height="113">
+      <h1 class="titulo-elegante">Boutique Girl</h1>
+
+<style>
+.titulo-elegante {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #b98a6d;
+    text-align: center;
+    text-transform: uppercase;
+}
+</style>
+
+      <nav>
+        <a href="COLECCION.html"><I>Colección</I></a>
+        <a href="novedades.html"><i>Novedades</i></a>
+        <a href="contacto.html"><i>Contacto</i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Estilo aesthetic para chicas</h1>
+      <p>Outfits muy lindos para cualquier ocasión.</p>
+      <a href="vercoleccion.html" class="btn">Ver colección</a>
+    </div>
+
+    <img src="aufit1.jpg" alt="stilo 1">
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="coleccion" class="section">
+    <h2>✨ Colección</h2>
+    <div class="grid">
+
+    <div class="card">
+        <img src="croptoprosa.jpg" alt="">
+        <div class="title">Crop top rosa pastel</div>
+        <div class="price">$250 MXN</div>
+        <button class="addbtn">Agregar</button>
+      </div>
+
+      <div class="card">
+        <img src="pantalon.jpg" alt="">
+        <div class="title">Pantalón animal print</div>
+        <div class="price">$350 MXN</div>
+        <button class="addbtn">Agregar</button>
+      </div>
+
+      <div class="card">
+        <img src="pantalonbeige.jpg" alt="">
+        <div class="title">Pantalón beige aesthetic</div>
+        <div class="price">$350 MXN</div>
+        <button class="addbtn">Agregar</button>
+      </div>
+
+      <div class="card">
+        <img src="chaqueta.jpg" alt="">
+        <div class="title">Chaqueta rosa nube</div>
+        <div class="price">$799 MXN</div>
+        <button class="addbtn">Agregar</button>
+      </div>
+
+      <!-- MENSAJE QUE APARECERÁ CUANDO SE HAGA CLIC -->
+      <p id="mensaje" style="font-size: 20px; color: rgb(239, 78, 186); font-weight: bold;"></p>
+
+      <!-- SCRIPT QUE HACE FUNCIONAR LOS 4 BOTONES -->
+      <script>
+        const botones = document.querySelectorAll(".addbtn");
+
+        botones.forEach(boton => {
+          boton.addEventListener("click", () => {
+            document.getElementById("mensaje").innerText = "¡Agregado correctamente!";
+          });
+        });
+      </script>
+
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+    <footer>
+     <p>Maria Ximena Michimani Cuatecatl</p>
+     <p>Dalia Sofia Pérez Aparicio</p> 
+     <p>5°CMP</p> 
+     En esta página se vende ropa solo para mujer y ropa muy colorida.
+    </footer>
+
+
+</body>
+</html>
